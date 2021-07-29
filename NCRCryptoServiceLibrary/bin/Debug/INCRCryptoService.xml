@@ -1,0 +1,60 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>INCRCryptoService</name>
+    </assembly>
+    <members>
+        <member name="T:INCRCryptoService.INCRCryptoService">
+            <summary>
+            NCR crypto service or degital intarface can be used by the ATM applicaiton to register/connect 
+            the current ATM user and perfrom transactions like sell users account crypto currency to encash for 
+            a withdrawal or buy the crypto with convienience like a simple transfer.
+            </summary>
+        </member>
+        <member name="M:INCRCryptoService.INCRCryptoService.ConnectUser(System.String)">
+            <summary>
+            Connects the current ATM user to the crypto service.
+            </summary>
+            <param name="cardNumber">user card number</param>
+            <returns></returns>
+        </member>
+        <member name="M:INCRCryptoService.INCRCryptoService.Close">
+            <summary>
+            Closes the user connection
+            </summary>
+        </member>
+        <member name="M:INCRCryptoService.INCRCryptoService.RegisterUser(System.String,System.String,System.String)">
+            <summary>
+            Registers a new user into the NCR/BANK digital crypto service.
+            </summary>
+            <remarks> Need to be called by the banks regiatration webpage.</remarks>
+            <param name="cardNumber">users card number.</param>
+            <param name="ApiKey">the apikey for the crypto account.</param>
+            <param name="secretKey">the secretKey for the users crypto account.</param>
+            <returns></returns>
+        </member>
+        <member name="M:INCRCryptoService.INCRCryptoService.GetCryptoPrice(System.String)">
+            <summary>
+            Get the current price of the crypto
+            </summary>
+            <param name="coinId">coin id.</param>
+            <returns></returns>
+        </member>
+        <member name="M:INCRCryptoService.INCRCryptoService.BuyCrypto(System.String,System.Single)">
+            <summary>
+            Buys the crypto currency for the current user.
+            </summary>
+            <param name="coinId">crypto currency id (ex : BTCUSD for bitcoin)</param>
+            <param name="amount">crypto currency in equivalent amount</param>
+            <returns>success/fail</returns>
+        </member>
+        <member name="M:INCRCryptoService.INCRCryptoService.SellCrypto(System.String,System.Single)">
+            <summary>
+            Sells the crypto currency for the current user.
+            </summary>
+            <param name="coinId">crypto currency id (ex : BTCUSD for bitcoin)</param>
+            <param name="amount">crypto currency in equivalent amount</param>
+            <returns>success/fail</returns>
+        </member>
+    </members>
+</doc>

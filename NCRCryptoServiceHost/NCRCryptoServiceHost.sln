@@ -1,0 +1,44 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30907.101
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NCRCryptoServiceHost", "NCRCryptoServiceHost.csproj", "{964AEFC3-0DF9-4D71-8472-7AD9C500E51B}"
+	ProjectSection(ProjectDependencies) = postProject
+		{B6C5FC04-9DDB-45C1-91B3-B6877487A907} = {B6C5FC04-9DDB-45C1-91B3-B6877487A907}
+		{F7D0E3BC-F167-4CC5-BF34-39E9CBFE4A66} = {F7D0E3BC-F167-4CC5-BF34-39E9CBFE4A66}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "INCRCryptoService", "..\INCRCryptoService\INCRCryptoService.csproj", "{B6C5FC04-9DDB-45C1-91B3-B6877487A907}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NCRCryptoServiceLibrary", "..\NCRCryptoServiceLibrary\NCRCryptoServiceLibrary.csproj", "{F7D0E3BC-F167-4CC5-BF34-39E9CBFE4A66}"
+	ProjectSection(ProjectDependencies) = postProject
+		{B6C5FC04-9DDB-45C1-91B3-B6877487A907} = {B6C5FC04-9DDB-45C1-91B3-B6877487A907}
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{964AEFC3-0DF9-4D71-8472-7AD9C500E51B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{964AEFC3-0DF9-4D71-8472-7AD9C500E51B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{964AEFC3-0DF9-4D71-8472-7AD9C500E51B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{964AEFC3-0DF9-4D71-8472-7AD9C500E51B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B6C5FC04-9DDB-45C1-91B3-B6877487A907}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B6C5FC04-9DDB-45C1-91B3-B6877487A907}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B6C5FC04-9DDB-45C1-91B3-B6877487A907}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B6C5FC04-9DDB-45C1-91B3-B6877487A907}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F7D0E3BC-F167-4CC5-BF34-39E9CBFE4A66}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F7D0E3BC-F167-4CC5-BF34-39E9CBFE4A66}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F7D0E3BC-F167-4CC5-BF34-39E9CBFE4A66}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F7D0E3BC-F167-4CC5-BF34-39E9CBFE4A66}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {91CDABAB-DBD8-4408-8E89-0C4D8080F3DA}
+	EndGlobalSection
+EndGlobal
