@@ -1,0 +1,144 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{3EC8BB35-AF50-488C-9D0A-FF061120AEBA}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Ncr.Connections.Cjsa.CashWithdrawalTxBNC</RootNamespace>
+    <AssemblyName>Ncr.Connections.Cjsa.CashWithdrawalTxBNC</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>R:\BIN\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>R:\BIN\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="NCR.APTRA.BusDatCore, Version=1.13.0.21, Culture=neutral, PublicKeyToken=aace1f39f79d5e9e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\bin\NCR.APTRA.BusDatCore.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="NCR.APTRA.ClassConfiguratorCore">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>R:\BIN\NCR.APTRA.ClassConfiguratorCore.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="NCR.APTRA.DatRec, Version=1.0.0.20, Culture=neutral, PublicKeyToken=21c04bf6491302fb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>R:\bin\NCR.APTRA.DatRec.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="NCR.APTRA.IAcctSrv">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>R:\BIN\NCR.APTRA.IAcctSrv.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="NCR.APTRA.IBusDat">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>R:\BIN\NCR.APTRA.IBusDat.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="NCR.APTRA.IDatRec, Version=1.2.0.2, Culture=neutral, PublicKeyToken=25bb4ae9c2bf6d5f, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>R:\bin\NCR.APTRA.IDatRec.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="NCR.APTRA.INotemixSrv">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>R:\bin\NCR.APTRA.INotemixSrv.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="NCR.APTRA.ISTX">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>R:\bin\NCR.APTRA.ISTX.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="NCR.APTRA.PDCollection, Version=1.3.0.1, Culture=neutral, PublicKeyToken=ec482bd17753e77d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\bin\NCR.APTRA.PDCollection.dll</HintPath>
+    </Reference>
+    <Reference Include="NCR.APTRA.STXCore">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>R:\BIN\NCR.APTRA.STXCore.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="NCR.APTRA.WithdrawalCore">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>R:\BIN\NCR.APTRA.WithdrawalCore.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="NCR.APTRA.WithdrawalTx">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>R:\BIN\NCR.APTRA.WithdrawalTx.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ncr.Connections.Cjsa.AccountService, Version=2.9.0.264, Culture=neutral, PublicKeyToken=bc10fcf78c080995, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\bin\Ncr.Connections.Cjsa.AccountService.dll</HintPath>
+    </Reference>
+    <Reference Include="Ncr.Connections.Cjsa.Core, Version=2.9.0.264, Culture=neutral, PublicKeyToken=6089e3b4ac03bb07, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\bin\Ncr.Connections.Cjsa.Core.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ncr.Connections.Client.Browser.BrowserControl">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>R:\bin\Ncr.Connections.Client.Browser.BrowserControl.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ncr.Connections.Client.NativeTxCore, Version=2.9.0.264, Culture=neutral, PublicKeyToken=362d13c8e30182e1, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\bin\Ncr.Connections.Client.NativeTxCore.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CjsaNoteMix.cs" />
+    <Compile Include="NativeCashWithdrawalTxExt.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <EmbeddedResource Include="html_resources\dist\withdrawalTxExtProxy.js" />
+    <EmbeddedResource Include="html_resources\dist\withdrawalTxExtProxy.min.js" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>rem xcopy $(ProjectDir)core\RestSharp.dll $(TargetDir) /C/Y/R</PreBuildEvent>
+  </PropertyGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
